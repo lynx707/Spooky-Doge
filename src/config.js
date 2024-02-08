@@ -11,7 +11,7 @@ module.exports = {
   logs: process.env.LOGS || '', 
   links: {
     support: process.env.SUPPORT || 'https://discord.gg/aromax-development-708565122188312579',
-    invite: process.env.INVITE || 'https://discord.gg/aromax-development-708565122188312579',
+    invite: process.env.INVITE || 'https://discord.com/oauth2/authorize?client_id=1007195786800541816&permissions=3214916709696&scope=bot',
     vote: process.env.VOTE || 'https://discord.gg/aromax-development-708565122188312579',
     bg: process.env.BG || 'https://media.discordapp.net/attachments/966675680907657256/967789748699668480/flat-landscape-lake-sunset-deer-wallpaper-preview.jpg'
   },
