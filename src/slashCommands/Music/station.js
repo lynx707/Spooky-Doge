@@ -21,7 +21,7 @@ module.exports = {
        await interaction.deferReply({
         ephemeral: false,
        });
-  let station = "Lofi Radio (Default)"
+  let station = "Spooky Radio (Default)"
 const ress = await db1.findOne({ Guild: interaction.guildId });
  if(ress) station = ress.Radio;
       
@@ -36,20 +36,20 @@ const ress = await db1.findOne({ Guild: interaction.guildId });
           .setCustomId('station')
           .setMinValues(1)
           .setMaxValues(1)
-          .setPlaceholder('Lofi Radio Stations')
+          .setPlaceholder('Spooky Radio Stations')
           .addOptions([
             {
-              label: 'Anime lo-fi',
+              label: 'Bhoot.com',
               value: 'anime',
               emoji: '🌸',
             },
             {
-              label: ' Sleep lo-fi',
+              label: 'Bhoutiggota',
               value: 'sleep',
               emoji: '😴',
             },
             {
-              label: 'Study lo-fi',
+              label: 'Bhoot Kotha',
               value: 'study',
               emoji: '📖',
             }
@@ -67,17 +67,17 @@ const ress = await db1.findOne({ Guild: interaction.guildId });
           .setPlaceholder('Lofi Radio Stations')
           .addOptions([
             {
-              label: 'Anime lo-fi',
+              label: 'Bhoot.com',
               value: 'anime',
               emoji: '🌸',
             },
             {
-              label: ' Sleep lo-fi',
+              label: 'Bhoutiggota',
               value: 'sleep',
               emoji: '😴',
             },
             {
-              label: 'Study lo-fi',
+              label: 'Bhoot Kotha',
               value: 'study',
               emoji: '📖',
             }
@@ -122,7 +122,7 @@ if (options === 'anime') {
 
  if (ress) {
       ress.oldradio = station;
-      ress.Radio = "Anime lo-fi";
+      ress.Radio = "Bhoot.com";
       await ress.save()
               if (!m) return; 
   m.edit({
@@ -131,7 +131,7 @@ if (options === 'anime') {
     } else {
       const newData = new db1({
         Guild: interaction.guildId,
-        Radio: "Anime lo-fi",
+        Radio: "Bhoot.com",
         oldradio: station
       });
            if (!m) return; 
@@ -160,7 +160,7 @@ if (options === 'anime') {
   
                if (ress) {
       ress.oldradio = station;
-      ress.Radio = "Sleep lo-fi";
+      ress.Radio = "Bhoutiggota";
       await ress.save()
               if (!m) return; 
   m.edit({
@@ -169,7 +169,7 @@ if (options === 'anime') {
     } else {
       const newData = new db1({
         Guild: interaction.guildId,
-        Radio: "Sleep lo-fi",
+        Radio: "Bhoutiggota",
         oldradio: station
       });
            if (!m) return; 
@@ -189,7 +189,7 @@ if (options === 'anime') {
   
                if (ress) {
       ress.oldradio = station;
-      ress.Radio = "Study lo-fi";
+      ress.Radio = "Bhoot Kotha";
       await ress.save()
               if (!m) return; 
   m.edit({
@@ -198,7 +198,7 @@ if (options === 'anime') {
     } else {
       const newData = new db1({
         Guild: interaction.guildId,
-        Radio: "Study lo-fi",
+        Radio: "Bhoot Kotha",
         oldradio: station
       });
            if (!m) return; 
