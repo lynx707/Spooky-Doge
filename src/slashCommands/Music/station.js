@@ -41,17 +41,17 @@ const ress = await db1.findOne({ Guild: interaction.guildId });
             {
               label: 'Bhoot.com',
               value: 'anime',
-              emoji: '🌸',
+              emoji: '💀',
             },
             {
               label: 'Bhoutiggota',
               value: 'sleep',
-              emoji: '😴',
+              emoji: '☠️',
             },
             {
               label: 'Bhoot Kotha',
               value: 'study',
-              emoji: '📖',
+              emoji: '👻',
             }
           ])
       )
@@ -69,17 +69,17 @@ const ress = await db1.findOne({ Guild: interaction.guildId });
             {
               label: 'Bhoot.com',
               value: 'anime',
-              emoji: '🌸',
+              emoji: '💀',
             },
             {
               label: 'Bhoutiggota',
               value: 'sleep',
-              emoji: '😴',
+              emoji: '☠️',
             },
             {
               label: 'Bhoot Kotha',
               value: 'study',
-              emoji: '📖',
+              emoji: '👻',
             }
           ])
       )
