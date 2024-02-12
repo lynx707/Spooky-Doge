@@ -72,19 +72,19 @@ if(station == "default")
 }
 
     
-if(station == "Anime lo-fi")
+if(station == "Bhoot.com")
 {
   const anime = require('../../songs/anime.json');
   np = anime.words[Math.floor((Math.random() * anime.words.length))];
 }
 
-    if(station == "Sleep lo-fi")
+    if(station == "Bhoutiggota")
 {
   const sleep = require('../../songs/sleep.json');
   np = sleep.words[Math.floor((Math.random() * sleep.words.length))];
 }
 
-    if(station == "Study lo-fi")
+    if(station == "Bhoot Kotha")
 {
   const study = require('../../songs/study.json');
  np = study.words[Math.floor((Math.random() * study.words.length))];
